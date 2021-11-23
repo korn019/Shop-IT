@@ -1,0 +1,75 @@
+<%- include('../../partials/header.ejs') %>
+    <section class="section has-background-light mt-6">
+
+        <div class="container mt-1">
+            <h1 class="has-text-weight-bold is-size-3 has-text-dark pb-3 mb-6">Prduct Detail</h1>
+
+            <div class="columns is-multiline ">
+                <!-- Left -->
+                <div class="column is-6 pr-5 ">
+                    <div>
+                        <div class=" mb-0">
+                            <figure class="view overlay rounded z-depth-1 main-img">
+                                <a href="../../../images/computer/computer-16.jpg">
+                                    <img src="../../../images/computer/computer-16.jpg" id="image">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="product_element column is-6 has-background-light mt-4 mb-5">
+                    <input type="hidden" name="" id="product-id " value="16">
+                    <h5 class="product_name  pt-1 mb-5 has-text-weight-bold is-size-3"> 8GB (8GBx1) DDR4/2666 RAM PC CORSAIR VENGEANCE LPX(BLACK)</h5>
+
+
+                    <div class="table-responsive ">
+                        <table class="table table-sm table-borderless  has-background-light">
+                            <tbody>
+                                <tr>
+                                    <th class="pl-0 w-25  weight-product"><strong>Category</strong></th>
+                                    <td>computer</td>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0 w-25  weight-product"><strong>Weight</strong></th>
+                                    <td>30 lbs</td>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0 w-25 in-stock"><strong>In Stock</strong></th>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0 pt-3 in-stock"><strong>Price</strong></th>
+                                    <td class="product-price has-text-weight-bold has-text-danger is-size-4-fullhd pt-1">฿1,590</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="">
+                        <table class="table table-sm table-borderless  has-background-light">
+                            <tbody>
+                                <tr>
+                                    <td class="pl-0 pb-0 has-text-weight-bold">Quantity</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="counter is-vcentered mt-3 pl-5">
+                                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                                            <input type="text" value="1">
+                                            <span class="up" onClick='increaseCount(event, this)'>+</span>
+                                            <button type="button" class="btn_add_to_cart button is-link is-light">Add to cart</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-6"></div>
+    </section>
+
+
+    <%- include('../../partials/footer.ejs') %>

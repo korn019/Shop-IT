@@ -1,0 +1,100 @@
+*,*::before, *::after {
+    box-sizing:border-box;
+}
+
+.k {
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+::root {
+    --accent-color: #641BFF;
+    --heading-font-family: 'Poppins', sans-serif;
+    --body-font-family:  'Lato', sans-serif;
+}
+
+.landing {
+    background-color: #666666;
+    background-image: url('https://learning4live.com/wp-content/uploads/2017/10/3.jpg');
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.landing-overlay {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.landing-content {
+    position: relative;
+}
+
+
+@media screen and (max-width: 768px){
+    .landing-content{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+img {
+    width:inherit;
+}
+
+.b {
+  height: 550px;
+}
+/* Price Box */
+
+
+.textCart {
+    width:1rem;
+}
+
+
+/* Quantity Product */
+  .counter {
+      width: 150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .counter input {
+      width: 50px;
+      border: 0;
+      line-height: 30px;
+      font-size: 20px;
+      text-align: center;
+      background: #0052cc;
+      color: #fff;
+      appearance: none;
+      outline: 0;
+  }
+  .counter span {
+      display: block;
+      font-size: 25px;
+      padding: 0 10px;
+      cursor: pointer;
+      color: #0052cc;
+      user-select: none;
+  }
+
+  table.cen {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+ .conntainer-here {
+     width: 375px;
+     height: 520px
+     
+ }
+
+
+/* Shopping Carts */
+ .boxCarts {
+
+    padding: 15rem 20rem 10rem 20rem;
+
+}

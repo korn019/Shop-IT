@@ -1,0 +1,66 @@
+<%- include('partials/header.ejs') %>
+
+<section class="has-background-light">
+    <div class="container mt-1 ">
+        <div class="columns boxCarts ">
+            <div class="card column is-12 pr-5 has-background-grey-light ">
+    <table>
+        <h1 class="has-text-weight-bold is-size-3 has-text-dark pb-3 mb-6">Shopping Cart</h1>
+    <form action="https://demo.opencart.com/index.php?route=checkout/cart/edit" method="post" enctype="multipart/form-data">
+    <div class="table-responsive">
+        <table class="table table-bordered has-background-grey-light">
+           <tbody>
+             <tr class="has-text-centered has-text-weight-bold">
+                <td>Image</td>
+                <td>Product Name</td>
+                <td>Model</td>
+                <td>Quantity</td>
+                <td>Unit Price</td>
+                <td>Total</td>
+            </tr>
+          </tbody>
+        <tbody>
+            <tr  class="has-text-centered ">
+                <td> <a href="#"><img src="https://demo.opencart.com/image/cache/catalog/demo/iphone_1-47x47.jpg" alt="iPhone" title="iPhone" class="img-thumbnail"></a> 
+                </td>
+                <td><a href="#"><p class="has-text-centered">iPhone</a></p>
+                <td class="text-left">product 11</td>
+                <td class="text-left">
+                    <div class="counter is-vcentered pl-3 ">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                </td>
+                <td class="text-right">$123.20</td>
+                <td class="text-right">$123.20</td>
+            </tr>
+            <tbody class="has-text-white"><tr>
+                <td class="text-right"><strong>Sub-Total</strong></td>
+                <td class="text-right">$101.00</td>
+                </tr>
+                <tr>
+                <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                <td class="text-right">$2.00</td>
+                </tr>
+                <tr>
+                <td class="text-right"><strong>VAT (20%)</strong></td>
+                <td class="text-right">$20.20</td>
+                </tr>
+                <tr>
+                <td class="text-right"><strong>Total</strong></td>
+                <td class="text-right">$123.20</td>
+                </tr>
+                </tbody>
+        </tbody>
+    
+    </table>
+    </div>
+    </form>
+
+</section>
+
+<%- include('partials/footer.ejs') %>
+
+
+
